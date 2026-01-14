@@ -1,0 +1,10 @@
+^C:\USERS\ADNAN\.CARGO\REGISTRY\SRC\INDEX.CRATES.IO-1949CF8C6B5B557F\PROTOBUF-SRC-2.1.1+27.1\PROTOBUF\THIRD_PARTY\ABSEIL-CPP\ABSL\BASE\CMAKELISTS.TXT
+setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/third_party/abseil-cpp/absl/base/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

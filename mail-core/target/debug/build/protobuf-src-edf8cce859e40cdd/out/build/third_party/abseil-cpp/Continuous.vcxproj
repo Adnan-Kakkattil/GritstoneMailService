@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{49BFCF13-6C87-3B1A-9EAD-95F3063B1DC7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Continuous</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\94c7ba8961cdce0bc166fb423e084237\Continuous.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\ctest.exe -C Debug -DMODEL=Continuous -S CMakeFiles/CTestScript.cmake -V
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\CMakeFiles\Continuous</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\ctest.exe -C Release -DMODEL=Continuous -S CMakeFiles/CTestScript.cmake -V
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\CMakeFiles\Continuous</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\ctest.exe -C MinSizeRel -DMODEL=Continuous -S CMakeFiles/CTestScript.cmake -V
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\CMakeFiles\Continuous</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\ctest.exe -C RelWithDebInfo -DMODEL=Continuous -S CMakeFiles/CTestScript.cmake -V
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\CMakeFiles\Continuous</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/third_party/abseil-cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\AbseilDll.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\AbseilHelpers.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\abslConfig.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\copts\AbseilConfigureCopts.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\copts\GENERATED_AbseilCopts.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeParseArguments.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTest.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTestTargets.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTestUseLaunchers.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\DartConfiguration.tcl.in;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindThreads.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Templates\CTestScript.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/third_party/abseil-cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\AbseilDll.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\AbseilHelpers.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\abslConfig.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\copts\AbseilConfigureCopts.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\copts\GENERATED_AbseilCopts.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeParseArguments.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTest.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTestTargets.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTestUseLaunchers.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\DartConfiguration.tcl.in;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindThreads.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Templates\CTestScript.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/third_party/abseil-cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\AbseilDll.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\AbseilHelpers.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\abslConfig.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\copts\AbseilConfigureCopts.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\copts\GENERATED_AbseilCopts.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeParseArguments.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTest.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTestTargets.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTestUseLaunchers.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\DartConfiguration.tcl.in;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindThreads.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Templates\CTestScript.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/third_party/abseil-cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\AbseilDll.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\AbseilHelpers.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\CMake\abslConfig.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\copts\AbseilConfigureCopts.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\copts\GENERATED_AbseilCopts.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakePackageConfigHelpers.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeParseArguments.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTest.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTestTargets.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CTestUseLaunchers.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCXXSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\DartConfiguration.tcl.in;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindThreads.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Templates\CTestScript.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\CMakeFiles\Continuous">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\ZERO_CHECK.vcxproj">
+      <Project>{C5405A27-607F-3770-A1A7-0B21E26A514E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package mail;
+
+option go_package = "github.com/gritstone/mail-service/api-gateway/proto/mail";
+
+service MailService {
+    rpc GetServerStats (StatsRequest) returns (StatsResponse);
+    rpc SendMail (SendRequest) returns (SendResponse);
+}
+
+message StatsRequest {}
+
+message StatsResponse {
+    uint32 active_connections = 1;
+    uint32 total_emails_received = 2;
+    string uptime = 3;
+}
+
+message SendRequest {
+    string sender = 1;
+    string recipient = 2;
+    string subject = 3;
+    string body = 4;
+}
+
+message SendResponse {
+    bool success = 1;
+    string message = 2;
+}
+

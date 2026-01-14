@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2C234474-A209-3144-BB7A-69E33C2A87D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>protoc-gen-upb_minitable</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">protoc-gen-upb_minitable.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">protoc-gen-upb_minitable</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">protoc-gen-upb_minitable.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">protoc-gen-upb_minitable</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">protoc-gen-upb_minitable.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">protoc-gen-upb_minitable</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">protoc-gen-upb_minitable.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">protoc-gen-upb_minitable</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\libprotobuf.lib;Debug\libupb.lib;third_party\abseil-cpp\absl\base\Debug\absl_base.lib;third_party\abseil-cpp\absl\strings\Debug\absl_cord.lib;third_party\abseil-cpp\absl\log\Debug\absl_die_if_null.lib;third_party\abseil-cpp\absl\hash\Debug\absl_hash.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_initialize.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_globals.lib;third_party\abseil-cpp\absl\base\Debug\absl_log_severity.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_distributions.lib;third_party\abseil-cpp\absl\status\Debug\absl_status.lib;third_party\abseil-cpp\absl\status\Debug\absl_statusor.lib;third_party\abseil-cpp\absl\strings\Debug\absl_strings.lib;third_party\abseil-cpp\absl\synchronization\Debug\absl_synchronization.lib;third_party\abseil-cpp\absl\time\Debug\absl_time.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_internal_check_op.lib;third_party\abseil-cpp\absl\debugging\Debug\absl_leak_check.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_internal_conditions.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_internal_message.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_internal_nullguard.lib;third_party\abseil-cpp\absl\debugging\Debug\absl_examine_stack.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_internal_format.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_internal_proto.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_internal_log_sink_set.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_sink.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_entry.lib;third_party\abseil-cpp\absl\flags\Debug\absl_flags_internal.lib;third_party\abseil-cpp\absl\flags\Debug\absl_flags_marshalling.lib;third_party\abseil-cpp\absl\flags\Debug\absl_flags_reflection.lib;third_party\abseil-cpp\absl\flags\Debug\absl_flags_config.lib;third_party\abseil-cpp\absl\flags\Debug\absl_flags_program_name.lib;third_party\abseil-cpp\absl\flags\Debug\absl_flags_private_handle_accessor.lib;third_party\abseil-cpp\absl\flags\Debug\absl_flags_commandlineflag.lib;third_party\abseil-cpp\absl\flags\Debug\absl_flags_commandlineflag_internal.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_internal_globals.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_globals.lib;third_party\abseil-cpp\absl\log\Debug\absl_vlog_config_internal.lib;third_party\abseil-cpp\absl\log\Debug\absl_log_internal_fnmatch.lib;third_party\abseil-cpp\absl\container\Debug\absl_raw_hash_set.lib;third_party\abseil-cpp\absl\hash\Debug\absl_hash.lib;third_party\abseil-cpp\absl\hash\Debug\absl_city.lib;third_party\abseil-cpp\absl\hash\Debug\absl_low_level_hash.lib;third_party\abseil-cpp\absl\container\Debug\absl_hashtablez_sampler.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_distributions.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_seed_sequences.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_internal_pool_urbg.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_internal_randen.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_internal_randen_hwaes.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_internal_randen_hwaes_impl.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_internal_randen_slow.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_internal_platform.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_internal_seed_material.lib;third_party\abseil-cpp\absl\random\Debug\absl_random_seed_gen_exception.lib;third_party\abseil-cpp\absl\status\Debug\absl_status.lib;third_party\abseil-cpp\absl\strings\Debug\absl_cord.lib;third_party\abseil-cpp\absl\strings\Debug\absl_cordz_info.lib;third_party\abseil-cpp\absl\strings\Debug\absl_cord_internal.lib;third_party\abseil-cpp\absl\strings\Debug\absl_cordz_functions.lib;third_party\abseil-cpp\absl\profiling\Debug\absl_exponential_biased.lib;third_party\abseil-cpp\absl\strings\Debug\absl_cordz_handle.lib;third_party\abseil-cpp\absl\crc\Debug\absl_crc_cord_state.lib;third_party\abseil-cpp\absl\crc\Debug\absl_crc32c.lib;third_party\abseil-cpp\absl\crc\Debug\absl_crc_internal.lib;third_party\abseil-cpp\absl\crc\Debug\absl_crc_cpu_detect.lib;third_party\abseil-cpp\absl\types\Debug\absl_bad_optional_access.lib;third_party\abseil-cpp\absl\base\Debug\absl_strerror.lib;third_party\abseil-cpp\absl\strings\Debug\absl_str_format_internal.lib;third_party\abseil-cpp\absl\synchronization\Debug\absl_synchronization.lib;third_party\abseil-cpp\absl\debugging\Debug\absl_stacktrace.lib;third_party\abseil-cpp\absl\debugging\Debug\absl_symbolize.lib;third_party\abseil-cpp\absl\debugging\Debug\absl_debugging_internal.lib;third_party\abseil-cpp\absl\debugging\Debug\absl_demangle_internal.lib;third_party\abseil-cpp\absl\debugging\Debug\absl_demangle_rust.lib;third_party\abseil-cpp\absl\debugging\Debug\absl_decode_rust_punycode.lib;third_party\abseil-cpp\absl\debugging\Debug\absl_utf8_for_code_point.lib;third_party\abseil-cpp\absl\synchronization\Debug\absl_graphcycles_internal.lib;third_party\abseil-cpp\absl\synchronization\Debug\absl_kernel_timeout_internal.lib;third_party\abseil-cpp\absl\base\Debug\absl_malloc_internal.lib;third_party\abseil-cpp\absl\time\Debug\absl_time.lib;third_party\abseil-cpp\absl\time\Debug\absl_civil_time.lib;third_party\abseil-cpp\absl\time\Debug\absl_time_zone.lib;third_party\abseil-cpp\absl\types\Debug\absl_bad_variant_access.lib;third_party\utf8_range\Debug\utf8_validity.lib;third_party\abseil-cpp\absl\strings\Debug\absl_strings.lib;third_party\abseil-cpp\absl\numeric\Debug\absl_int128.lib;third_party\abseil-cpp\absl\strings\Debug\absl_strings_internal.lib;third_party\abseil-cpp\absl\strings\Debug\absl_string_view.lib;third_party\abseil-cpp\absl\base\Debug\absl_base.lib;third_party\abseil-cpp\absl\base\Debug\absl_spinlock_wait.lib;third_party\abseil-cpp\absl\base\Debug\absl_throw_delegate.lib;third_party\abseil-cpp\absl\base\Debug\absl_raw_logging_internal.lib;third_party\abseil-cpp\absl\base\Debug\absl_log_severity.lib;-ignore:4221;third_party\utf8_range\Debug\utf8_range.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/Debug/protoc-gen-upb_minitable.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/Debug/protoc-gen-upb_minitable.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>27.2</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\libprotobuf.lib;Release\libupb.lib;third_party\abseil-cpp\absl\base\Release\absl_base.lib;third_party\abseil-cpp\absl\strings\Release\absl_cord.lib;third_party\abseil-cpp\absl\log\Release\absl_die_if_null.lib;third_party\abseil-cpp\absl\hash\Release\absl_hash.lib;third_party\abseil-cpp\absl\log\Release\absl_log_initialize.lib;third_party\abseil-cpp\absl\log\Release\absl_log_globals.lib;third_party\abseil-cpp\absl\base\Release\absl_log_severity.lib;third_party\abseil-cpp\absl\random\Release\absl_random_distributions.lib;third_party\abseil-cpp\absl\status\Release\absl_status.lib;third_party\abseil-cpp\absl\status\Release\absl_statusor.lib;third_party\abseil-cpp\absl\strings\Release\absl_strings.lib;third_party\abseil-cpp\absl\synchronization\Release\absl_synchronization.lib;third_party\abseil-cpp\absl\time\Release\absl_time.lib;third_party\abseil-cpp\absl\log\Release\absl_log_internal_check_op.lib;third_party\abseil-cpp\absl\debugging\Release\absl_leak_check.lib;third_party\abseil-cpp\absl\log\Release\absl_log_internal_conditions.lib;third_party\abseil-cpp\absl\log\Release\absl_log_internal_message.lib;third_party\abseil-cpp\absl\log\Release\absl_log_internal_nullguard.lib;third_party\abseil-cpp\absl\debugging\Release\absl_examine_stack.lib;third_party\abseil-cpp\absl\log\Release\absl_log_internal_format.lib;third_party\abseil-cpp\absl\log\Release\absl_log_internal_proto.lib;third_party\abseil-cpp\absl\log\Release\absl_log_internal_log_sink_set.lib;third_party\abseil-cpp\absl\log\Release\absl_log_sink.lib;third_party\abseil-cpp\absl\log\Release\absl_log_entry.lib;third_party\abseil-cpp\absl\flags\Release\absl_flags_internal.lib;third_party\abseil-cpp\absl\flags\Release\absl_flags_marshalling.lib;third_party\abseil-cpp\absl\flags\Release\absl_flags_reflection.lib;third_party\abseil-cpp\absl\flags\Release\absl_flags_config.lib;third_party\abseil-cpp\absl\flags\Release\absl_flags_program_name.lib;third_party\abseil-cpp\absl\flags\Release\absl_flags_private_handle_accessor.lib;third_party\abseil-cpp\absl\flags\Release\absl_flags_commandlineflag.lib;third_party\abseil-cpp\absl\flags\Release\absl_flags_commandlineflag_internal.lib;third_party\abseil-cpp\absl\log\Release\absl_log_internal_globals.lib;third_party\abseil-cpp\absl\log\Release\absl_log_globals.lib;third_party\abseil-cpp\absl\log\Release\absl_vlog_config_internal.lib;third_party\abseil-cpp\absl\log\Release\absl_log_internal_fnmatch.lib;third_party\abseil-cpp\absl\container\Release\absl_raw_hash_set.lib;third_party\abseil-cpp\absl\hash\Release\absl_hash.lib;third_party\abseil-cpp\absl\hash\Release\absl_city.lib;third_party\abseil-cpp\absl\hash\Release\absl_low_level_hash.lib;third_party\abseil-cpp\absl\container\Release\absl_hashtablez_sampler.lib;third_party\abseil-cpp\absl\random\Release\absl_random_distributions.lib;third_party\abseil-cpp\absl\random\Release\absl_random_seed_sequences.lib;third_party\abseil-cpp\absl\random\Release\absl_random_internal_pool_urbg.lib;third_party\abseil-cpp\absl\random\Release\absl_random_internal_randen.lib;third_party\abseil-cpp\absl\random\Release\absl_random_internal_randen_hwaes.lib;third_party\abseil-cpp\absl\random\Release\absl_random_internal_randen_hwaes_impl.lib;third_party\abseil-cpp\absl\random\Release\absl_random_internal_randen_slow.lib;third_party\abseil-cpp\absl\random\Release\absl_random_internal_platform.lib;third_party\abseil-cpp\absl\random\Release\absl_random_internal_seed_material.lib;third_party\abseil-cpp\absl\random\Release\absl_random_seed_gen_exception.lib;third_party\abseil-cpp\absl\status\Release\absl_status.lib;third_party\abseil-cpp\absl\strings\Release\absl_cord.lib;third_party\abseil-cpp\absl\strings\Release\absl_cordz_info.lib;third_party\abseil-cpp\absl\strings\Release\absl_cord_internal.lib;third_party\abseil-cpp\absl\strings\Release\absl_cordz_functions.lib;third_party\abseil-cpp\absl\profiling\Release\absl_exponential_biased.lib;third_party\abseil-cpp\absl\strings\Release\absl_cordz_handle.lib;third_party\abseil-cpp\absl\crc\Release\absl_crc_cord_state.lib;third_party\abseil-cpp\absl\crc\Release\absl_crc32c.lib;third_party\abseil-cpp\absl\crc\Release\absl_crc_internal.lib;third_party\abseil-cpp\absl\crc\Release\absl_crc_cpu_detect.lib;third_party\abseil-cpp\absl\types\Release\absl_bad_optional_access.lib;third_party\abseil-cpp\absl\base\Release\absl_strerror.lib;third_party\abseil-cpp\absl\strings\Release\absl_str_format_internal.lib;third_party\abseil-cpp\absl\synchronization\Release\absl_synchronization.lib;third_party\abseil-cpp\absl\debugging\Release\absl_stacktrace.lib;third_party\abseil-cpp\absl\debugging\Release\absl_symbolize.lib;third_party\abseil-cpp\absl\debugging\Release\absl_debugging_internal.lib;third_party\abseil-cpp\absl\debugging\Release\absl_demangle_internal.lib;third_party\abseil-cpp\absl\debugging\Release\absl_demangle_rust.lib;third_party\abseil-cpp\absl\debugging\Release\absl_decode_rust_punycode.lib;third_party\abseil-cpp\absl\debugging\Release\absl_utf8_for_code_point.lib;third_party\abseil-cpp\absl\synchronization\Release\absl_graphcycles_internal.lib;third_party\abseil-cpp\absl\synchronization\Release\absl_kernel_timeout_internal.lib;third_party\abseil-cpp\absl\base\Release\absl_malloc_internal.lib;third_party\abseil-cpp\absl\time\Release\absl_time.lib;third_party\abseil-cpp\absl\time\Release\absl_civil_time.lib;third_party\abseil-cpp\absl\time\Release\absl_time_zone.lib;third_party\abseil-cpp\absl\types\Release\absl_bad_variant_access.lib;third_party\utf8_range\Release\utf8_validity.lib;third_party\abseil-cpp\absl\strings\Release\absl_strings.lib;third_party\abseil-cpp\absl\numeric\Release\absl_int128.lib;third_party\abseil-cpp\absl\strings\Release\absl_strings_internal.lib;third_party\abseil-cpp\absl\strings\Release\absl_string_view.lib;third_party\abseil-cpp\absl\base\Release\absl_base.lib;third_party\abseil-cpp\absl\base\Release\absl_spinlock_wait.lib;third_party\abseil-cpp\absl\base\Release\absl_throw_delegate.lib;third_party\abseil-cpp\absl\base\Release\absl_raw_logging_internal.lib;third_party\abseil-cpp\absl\base\Release\absl_log_severity.lib;-ignore:4221;third_party\utf8_range\Release\utf8_range.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/Release/protoc-gen-upb_minitable.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/Release/protoc-gen-upb_minitable.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>27.2</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\libprotobuf.lib;MinSizeRel\libupb.lib;third_party\abseil-cpp\absl\base\MinSizeRel\absl_base.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_cord.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_die_if_null.lib;third_party\abseil-cpp\absl\hash\MinSizeRel\absl_hash.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_initialize.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_globals.lib;third_party\abseil-cpp\absl\base\MinSizeRel\absl_log_severity.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_distributions.lib;third_party\abseil-cpp\absl\status\MinSizeRel\absl_status.lib;third_party\abseil-cpp\absl\status\MinSizeRel\absl_statusor.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_strings.lib;third_party\abseil-cpp\absl\synchronization\MinSizeRel\absl_synchronization.lib;third_party\abseil-cpp\absl\time\MinSizeRel\absl_time.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_check_op.lib;third_party\abseil-cpp\absl\debugging\MinSizeRel\absl_leak_check.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_conditions.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_message.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_nullguard.lib;third_party\abseil-cpp\absl\debugging\MinSizeRel\absl_examine_stack.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_format.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_proto.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_log_sink_set.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_sink.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_entry.lib;third_party\abseil-cpp\absl\flags\MinSizeRel\absl_flags_internal.lib;third_party\abseil-cpp\absl\flags\MinSizeRel\absl_flags_marshalling.lib;third_party\abseil-cpp\absl\flags\MinSizeRel\absl_flags_reflection.lib;third_party\abseil-cpp\absl\flags\MinSizeRel\absl_flags_config.lib;third_party\abseil-cpp\absl\flags\MinSizeRel\absl_flags_program_name.lib;third_party\abseil-cpp\absl\flags\MinSizeRel\absl_flags_private_handle_accessor.lib;third_party\abseil-cpp\absl\flags\MinSizeRel\absl_flags_commandlineflag.lib;third_party\abseil-cpp\absl\flags\MinSizeRel\absl_flags_commandlineflag_internal.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_globals.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_globals.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_vlog_config_internal.lib;third_party\abseil-cpp\absl\log\MinSizeRel\absl_log_internal_fnmatch.lib;third_party\abseil-cpp\absl\container\MinSizeRel\absl_raw_hash_set.lib;third_party\abseil-cpp\absl\hash\MinSizeRel\absl_hash.lib;third_party\abseil-cpp\absl\hash\MinSizeRel\absl_city.lib;third_party\abseil-cpp\absl\hash\MinSizeRel\absl_low_level_hash.lib;third_party\abseil-cpp\absl\container\MinSizeRel\absl_hashtablez_sampler.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_distributions.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_seed_sequences.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_pool_urbg.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_randen.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_randen_hwaes.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_randen_hwaes_impl.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_randen_slow.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_platform.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_internal_seed_material.lib;third_party\abseil-cpp\absl\random\MinSizeRel\absl_random_seed_gen_exception.lib;third_party\abseil-cpp\absl\status\MinSizeRel\absl_status.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_cord.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_cordz_info.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_cord_internal.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_cordz_functions.lib;third_party\abseil-cpp\absl\profiling\MinSizeRel\absl_exponential_biased.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_cordz_handle.lib;third_party\abseil-cpp\absl\crc\MinSizeRel\absl_crc_cord_state.lib;third_party\abseil-cpp\absl\crc\MinSizeRel\absl_crc32c.lib;third_party\abseil-cpp\absl\crc\MinSizeRel\absl_crc_internal.lib;third_party\abseil-cpp\absl\crc\MinSizeRel\absl_crc_cpu_detect.lib;third_party\abseil-cpp\absl\types\MinSizeRel\absl_bad_optional_access.lib;third_party\abseil-cpp\absl\base\MinSizeRel\absl_strerror.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_str_format_internal.lib;third_party\abseil-cpp\absl\synchronization\MinSizeRel\absl_synchronization.lib;third_party\abseil-cpp\absl\debugging\MinSizeRel\absl_stacktrace.lib;third_party\abseil-cpp\absl\debugging\MinSizeRel\absl_symbolize.lib;third_party\abseil-cpp\absl\debugging\MinSizeRel\absl_debugging_internal.lib;third_party\abseil-cpp\absl\debugging\MinSizeRel\absl_demangle_internal.lib;third_party\abseil-cpp\absl\debugging\MinSizeRel\absl_demangle_rust.lib;third_party\abseil-cpp\absl\debugging\MinSizeRel\absl_decode_rust_punycode.lib;third_party\abseil-cpp\absl\debugging\MinSizeRel\absl_utf8_for_code_point.lib;third_party\abseil-cpp\absl\synchronization\MinSizeRel\absl_graphcycles_internal.lib;third_party\abseil-cpp\absl\synchronization\MinSizeRel\absl_kernel_timeout_internal.lib;third_party\abseil-cpp\absl\base\MinSizeRel\absl_malloc_internal.lib;third_party\abseil-cpp\absl\time\MinSizeRel\absl_time.lib;third_party\abseil-cpp\absl\time\MinSizeRel\absl_civil_time.lib;third_party\abseil-cpp\absl\time\MinSizeRel\absl_time_zone.lib;third_party\abseil-cpp\absl\types\MinSizeRel\absl_bad_variant_access.lib;third_party\utf8_range\MinSizeRel\utf8_validity.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_strings.lib;third_party\abseil-cpp\absl\numeric\MinSizeRel\absl_int128.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_strings_internal.lib;third_party\abseil-cpp\absl\strings\MinSizeRel\absl_string_view.lib;third_party\abseil-cpp\absl\base\MinSizeRel\absl_base.lib;third_party\abseil-cpp\absl\base\MinSizeRel\absl_spinlock_wait.lib;third_party\abseil-cpp\absl\base\MinSizeRel\absl_throw_delegate.lib;third_party\abseil-cpp\absl\base\MinSizeRel\absl_raw_logging_internal.lib;third_party\abseil-cpp\absl\base\MinSizeRel\absl_log_severity.lib;-ignore:4221;third_party\utf8_range\MinSizeRel\utf8_range.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/MinSizeRel/protoc-gen-upb_minitable.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/MinSizeRel/protoc-gen-upb_minitable.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>27.2</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\utf8_range;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb\reflection\cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\libprotobuf.lib;RelWithDebInfo\libupb.lib;third_party\abseil-cpp\absl\base\RelWithDebInfo\absl_base.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_cord.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_die_if_null.lib;third_party\abseil-cpp\absl\hash\RelWithDebInfo\absl_hash.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_initialize.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_globals.lib;third_party\abseil-cpp\absl\base\RelWithDebInfo\absl_log_severity.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_distributions.lib;third_party\abseil-cpp\absl\status\RelWithDebInfo\absl_status.lib;third_party\abseil-cpp\absl\status\RelWithDebInfo\absl_statusor.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_strings.lib;third_party\abseil-cpp\absl\synchronization\RelWithDebInfo\absl_synchronization.lib;third_party\abseil-cpp\absl\time\RelWithDebInfo\absl_time.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_check_op.lib;third_party\abseil-cpp\absl\debugging\RelWithDebInfo\absl_leak_check.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_conditions.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_message.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_nullguard.lib;third_party\abseil-cpp\absl\debugging\RelWithDebInfo\absl_examine_stack.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_format.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_proto.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_log_sink_set.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_sink.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_entry.lib;third_party\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_internal.lib;third_party\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_marshalling.lib;third_party\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_reflection.lib;third_party\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_config.lib;third_party\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_program_name.lib;third_party\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_private_handle_accessor.lib;third_party\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_commandlineflag.lib;third_party\abseil-cpp\absl\flags\RelWithDebInfo\absl_flags_commandlineflag_internal.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_globals.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_globals.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_vlog_config_internal.lib;third_party\abseil-cpp\absl\log\RelWithDebInfo\absl_log_internal_fnmatch.lib;third_party\abseil-cpp\absl\container\RelWithDebInfo\absl_raw_hash_set.lib;third_party\abseil-cpp\absl\hash\RelWithDebInfo\absl_hash.lib;third_party\abseil-cpp\absl\hash\RelWithDebInfo\absl_city.lib;third_party\abseil-cpp\absl\hash\RelWithDebInfo\absl_low_level_hash.lib;third_party\abseil-cpp\absl\container\RelWithDebInfo\absl_hashtablez_sampler.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_distributions.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_seed_sequences.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_pool_urbg.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_randen.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_randen_hwaes.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_randen_hwaes_impl.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_randen_slow.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_platform.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_internal_seed_material.lib;third_party\abseil-cpp\absl\random\RelWithDebInfo\absl_random_seed_gen_exception.lib;third_party\abseil-cpp\absl\status\RelWithDebInfo\absl_status.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_cord.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_cordz_info.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_cord_internal.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_cordz_functions.lib;third_party\abseil-cpp\absl\profiling\RelWithDebInfo\absl_exponential_biased.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_cordz_handle.lib;third_party\abseil-cpp\absl\crc\RelWithDebInfo\absl_crc_cord_state.lib;third_party\abseil-cpp\absl\crc\RelWithDebInfo\absl_crc32c.lib;third_party\abseil-cpp\absl\crc\RelWithDebInfo\absl_crc_internal.lib;third_party\abseil-cpp\absl\crc\RelWithDebInfo\absl_crc_cpu_detect.lib;third_party\abseil-cpp\absl\types\RelWithDebInfo\absl_bad_optional_access.lib;third_party\abseil-cpp\absl\base\RelWithDebInfo\absl_strerror.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_str_format_internal.lib;third_party\abseil-cpp\absl\synchronization\RelWithDebInfo\absl_synchronization.lib;third_party\abseil-cpp\absl\debugging\RelWithDebInfo\absl_stacktrace.lib;third_party\abseil-cpp\absl\debugging\RelWithDebInfo\absl_symbolize.lib;third_party\abseil-cpp\absl\debugging\RelWithDebInfo\absl_debugging_internal.lib;third_party\abseil-cpp\absl\debugging\RelWithDebInfo\absl_demangle_internal.lib;third_party\abseil-cpp\absl\debugging\RelWithDebInfo\absl_demangle_rust.lib;third_party\abseil-cpp\absl\debugging\RelWithDebInfo\absl_decode_rust_punycode.lib;third_party\abseil-cpp\absl\debugging\RelWithDebInfo\absl_utf8_for_code_point.lib;third_party\abseil-cpp\absl\synchronization\RelWithDebInfo\absl_graphcycles_internal.lib;third_party\abseil-cpp\absl\synchronization\RelWithDebInfo\absl_kernel_timeout_internal.lib;third_party\abseil-cpp\absl\base\RelWithDebInfo\absl_malloc_internal.lib;third_party\abseil-cpp\absl\time\RelWithDebInfo\absl_time.lib;third_party\abseil-cpp\absl\time\RelWithDebInfo\absl_civil_time.lib;third_party\abseil-cpp\absl\time\RelWithDebInfo\absl_time_zone.lib;third_party\abseil-cpp\absl\types\RelWithDebInfo\absl_bad_variant_access.lib;third_party\utf8_range\RelWithDebInfo\utf8_validity.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_strings.lib;third_party\abseil-cpp\absl\numeric\RelWithDebInfo\absl_int128.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_strings_internal.lib;third_party\abseil-cpp\absl\strings\RelWithDebInfo\absl_string_view.lib;third_party\abseil-cpp\absl\base\RelWithDebInfo\absl_base.lib;third_party\abseil-cpp\absl\base\RelWithDebInfo\absl_spinlock_wait.lib;third_party\abseil-cpp\absl\base\RelWithDebInfo\absl_throw_delegate.lib;third_party\abseil-cpp\absl\base\RelWithDebInfo\absl_raw_logging_internal.lib;third_party\abseil-cpp\absl\base\RelWithDebInfo\absl_log_severity.lib;-ignore:4221;third_party\utf8_range\RelWithDebInfo\utf8_range.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/RelWithDebInfo/protoc-gen-upb_minitable.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/RelWithDebInfo/protoc-gen-upb_minitable.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <Version>27.2</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\abseil-cpp.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\install.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotobuf-lite.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotobuf.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotoc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libupb.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-config-version.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-config.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-configure-target.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-generate.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-lite.pc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-module.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-options.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf.pc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protoc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\upb_generators.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\utf8_range.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\version.rc.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src\file_lists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLinkerFlag.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindThreads.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindZLIB.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckLinkerFlag.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\abseil-cpp.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\install.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotobuf-lite.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotobuf.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotoc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libupb.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-config-version.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-config.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-configure-target.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-generate.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-lite.pc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-module.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-options.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf.pc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protoc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\upb_generators.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\utf8_range.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\version.rc.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src\file_lists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLinkerFlag.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindThreads.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindZLIB.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckLinkerFlag.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\abseil-cpp.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\install.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotobuf-lite.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotobuf.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotoc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libupb.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-config-version.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-config.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-configure-target.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-generate.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-lite.pc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-module.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-options.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf.pc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protoc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\upb_generators.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\utf8_range.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\version.rc.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src\file_lists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLinkerFlag.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindThreads.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindZLIB.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckLinkerFlag.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\abseil-cpp.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\install.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotobuf-lite.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotobuf.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libprotoc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\libupb.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-config-version.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-config.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-configure-target.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-generate.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-lite.pc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-module.cmake.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf-options.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protobuf.pc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\protoc.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\upb_generators.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\utf8_range.cmake;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\cmake\version.rc.in;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src\file_lists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeDependentOption.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\CheckLinkerFlag.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindThreads.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\FindZLIB.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckLinkerFlag.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\4.1.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\common.cc" />
+    <ClCompile Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\file_layout.cc" />
+    <ClCompile Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\mangle.cc" />
+    <ClCompile Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\names.cc" />
+    <ClCompile Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\protoc-gen-upb_minitable-main.cc" />
+    <ClCompile Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\protoc-gen-upb_minitable.cc" />
+    <ClInclude Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\common.h" />
+    <ClInclude Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\file_layout.h" />
+    <ClInclude Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\mangle.h" />
+    <ClInclude Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\names.h" />
+    <ClInclude Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\plugin.h" />
+    <ClInclude Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\protoc-gen-upb_minitable.h" />
+    <ClInclude Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake\google\protobuf\compiler\plugin.upb.h" />
+    <ClInclude Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake\google\protobuf\compiler\plugin.upb_minitable.h" />
+    <ClCompile Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\upb_generator\cmake\google\protobuf\compiler\plugin.upb_minitable.c" />
+    <ResourceCompile Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\version.rc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\ZERO_CHECK.vcxproj">
+      <Project>{C5405A27-607F-3770-A1A7-0B21E26A514E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\types\bad_optional_access.vcxproj">
+      <Project>{21FC7002-ABFE-35BF-AD71-49090F627E05}</Project>
+      <Name>bad_optional_access</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\types\bad_variant_access.vcxproj">
+      <Project>{785214A2-6688-31D9-83DC-4FCB9B922AC6}</Project>
+      <Name>bad_variant_access</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\base.vcxproj">
+      <Project>{D788F21A-8287-3EEC-A11A-98C6557B3E56}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\hash\city.vcxproj">
+      <Project>{DB1C745B-50C3-3640-A95A-227A2FF0A4A8}</Project>
+      <Name>city</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\time\civil_time.vcxproj">
+      <Project>{5E213260-FB89-3E84-9D9B-0C2B06E436A5}</Project>
+      <Name>civil_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\cord.vcxproj">
+      <Project>{B37E8745-0912-331B-880E-045CF784864A}</Project>
+      <Name>cord</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\cord_internal.vcxproj">
+      <Project>{D640C213-6344-3F20-B9D5-6B8018AC8816}</Project>
+      <Name>cord_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\cordz_functions.vcxproj">
+      <Project>{4DA4CE64-9671-311A-B64B-BF924FB644FF}</Project>
+      <Name>cordz_functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\cordz_handle.vcxproj">
+      <Project>{AFAA4B89-945F-356F-B55D-4491FD116B3B}</Project>
+      <Name>cordz_handle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\cordz_info.vcxproj">
+      <Project>{05863980-B8DA-35C8-9520-B3E1980D0E72}</Project>
+      <Name>cordz_info</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\crc\crc32c.vcxproj">
+      <Project>{BD72D71D-A6EE-3130-AED8-2AD48270410B}</Project>
+      <Name>crc32c</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\crc\crc_cord_state.vcxproj">
+      <Project>{26E18B22-E8B4-37BE-A7F0-1A1C94EE7C6D}</Project>
+      <Name>crc_cord_state</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\crc\crc_cpu_detect.vcxproj">
+      <Project>{1402E656-B18A-3ACB-B23E-6EE5FAB968C2}</Project>
+      <Name>crc_cpu_detect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\crc\crc_internal.vcxproj">
+      <Project>{6E41ED43-0650-3BDE-9BBF-15F29001C19F}</Project>
+      <Name>crc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\debugging_internal.vcxproj">
+      <Project>{D6E70081-9861-3F7B-8D06-1DDACE23FA08}</Project>
+      <Name>debugging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\decode_rust_punycode.vcxproj">
+      <Project>{583DAA55-71D3-366C-ACF6-13D876BF1DB8}</Project>
+      <Name>decode_rust_punycode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\demangle_internal.vcxproj">
+      <Project>{9DBD473E-2FFA-3900-8BA5-9BAF41412F22}</Project>
+      <Name>demangle_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\demangle_rust.vcxproj">
+      <Project>{9063BE23-42FE-3598-9A10-224156860A91}</Project>
+      <Name>demangle_rust</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\die_if_null.vcxproj">
+      <Project>{8329E2E0-381B-3493-B202-897B78893376}</Project>
+      <Name>die_if_null</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\examine_stack.vcxproj">
+      <Project>{B01876DD-F5A6-3083-B760-627089FBC7D4}</Project>
+      <Name>examine_stack</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\profiling\exponential_biased.vcxproj">
+      <Project>{29092D65-0AA0-39F4-8FD2-EC3B78F1A998}</Project>
+      <Name>exponential_biased</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\flags\flags_commandlineflag.vcxproj">
+      <Project>{236A74A1-CA03-39B0-9ECD-B94734A2461F}</Project>
+      <Name>flags_commandlineflag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\flags\flags_commandlineflag_internal.vcxproj">
+      <Project>{08054B8A-5A15-34CF-A488-93FCB810DABD}</Project>
+      <Name>flags_commandlineflag_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\flags\flags_config.vcxproj">
+      <Project>{7485B207-B62E-3A03-AFD5-8F4F9AE26F18}</Project>
+      <Name>flags_config</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\flags\flags_internal.vcxproj">
+      <Project>{3FAA6055-13D8-3270-822A-FFD4528E1625}</Project>
+      <Name>flags_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\flags\flags_marshalling.vcxproj">
+      <Project>{178356BA-B639-323A-8377-9F3655D2A609}</Project>
+      <Name>flags_marshalling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\flags\flags_private_handle_accessor.vcxproj">
+      <Project>{677ED611-2C55-3C8D-8275-520286864C2F}</Project>
+      <Name>flags_private_handle_accessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\flags\flags_program_name.vcxproj">
+      <Project>{451EBB94-6A8F-31CF-8111-B3DD423E9622}</Project>
+      <Name>flags_program_name</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\flags\flags_reflection.vcxproj">
+      <Project>{3C95D776-9BA5-39FD-B60E-2BC183E17797}</Project>
+      <Name>flags_reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\synchronization\graphcycles_internal.vcxproj">
+      <Project>{8DC18B49-CAB7-3AE6-BE74-60515AC35C2F}</Project>
+      <Name>graphcycles_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\hash\hash.vcxproj">
+      <Project>{958FE99F-ED92-3A0F-A559-4D8C5F62C5B5}</Project>
+      <Name>hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\hashtablez_sampler.vcxproj">
+      <Project>{547FD4FA-1EAB-3935-BEC1-DC5BFFD2C283}</Project>
+      <Name>hashtablez_sampler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\numeric\int128.vcxproj">
+      <Project>{AA176C39-BE82-338B-A498-00D48A66D482}</Project>
+      <Name>int128</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\synchronization\kernel_timeout_internal.vcxproj">
+      <Project>{E71AD8D4-6EBD-33DE-B1E0-D15DDA871E93}</Project>
+      <Name>kernel_timeout_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\leak_check.vcxproj">
+      <Project>{215301E2-0618-3F3F-9B56-1B200A451914}</Project>
+      <Name>leak_check</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\libprotobuf.vcxproj">
+      <Project>{FDAD7474-71A3-3740-BCCB-5B6B63CE4991}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\libupb.vcxproj">
+      <Project>{935FCD80-3E87-3BFF-B6C9-DA382BF545DA}</Project>
+      <Name>libupb</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_entry.vcxproj">
+      <Project>{6D8DBE24-3F6A-3BEA-AA73-C052BACFCFA6}</Project>
+      <Name>log_entry</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_globals.vcxproj">
+      <Project>{D865B5B4-24A8-3020-B87A-88781160CD68}</Project>
+      <Name>log_globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_initialize.vcxproj">
+      <Project>{3019BF7F-64D0-3DA3-A235-9821A78F1D07}</Project>
+      <Name>log_initialize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_internal_check_op.vcxproj">
+      <Project>{556BF75D-5F85-39C5-A79F-B5741F09DFCF}</Project>
+      <Name>log_internal_check_op</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_internal_conditions.vcxproj">
+      <Project>{09D6D680-C0F6-395A-A438-A4EB3526926B}</Project>
+      <Name>log_internal_conditions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_internal_fnmatch.vcxproj">
+      <Project>{F2C84E03-FF58-31E4-B696-6CD9BE1AD501}</Project>
+      <Name>log_internal_fnmatch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_internal_format.vcxproj">
+      <Project>{85EE66D6-B128-3721-B12B-B5A099824E06}</Project>
+      <Name>log_internal_format</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_internal_globals.vcxproj">
+      <Project>{CFF4239B-B483-3733-9C43-B33436CE965A}</Project>
+      <Name>log_internal_globals</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_internal_log_sink_set.vcxproj">
+      <Project>{E81A62CA-6DB7-3896-97C4-1F98C9961BEA}</Project>
+      <Name>log_internal_log_sink_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_internal_message.vcxproj">
+      <Project>{4DF21710-2536-3F86-819D-253913A22DA8}</Project>
+      <Name>log_internal_message</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_internal_nullguard.vcxproj">
+      <Project>{3E588513-4358-304B-93F3-CF63F3A64DD9}</Project>
+      <Name>log_internal_nullguard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_internal_proto.vcxproj">
+      <Project>{AC625DD0-CEC2-39B5-8FE6-E6FE1A9E7EE0}</Project>
+      <Name>log_internal_proto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\log_severity.vcxproj">
+      <Project>{A92D5DBB-9CEF-3361-B39F-00763588B51B}</Project>
+      <Name>log_severity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\log_sink.vcxproj">
+      <Project>{24A81CB0-0850-31F3-81FF-2FD202812197}</Project>
+      <Name>log_sink</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\hash\low_level_hash.vcxproj">
+      <Project>{4D89979E-FC33-34B2-BCF5-33FD4AB3773E}</Project>
+      <Name>low_level_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\malloc_internal.vcxproj">
+      <Project>{7B0405ED-94BA-3C94-BF75-46B0F3A8F121}</Project>
+      <Name>malloc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_distributions.vcxproj">
+      <Project>{6F5AA31C-2DE7-3812-8025-E250D7D57B54}</Project>
+      <Name>random_distributions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_internal_platform.vcxproj">
+      <Project>{64E02799-1607-318D-90C6-979C2F36872C}</Project>
+      <Name>random_internal_platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_internal_pool_urbg.vcxproj">
+      <Project>{65771A5B-5741-3D6D-9DD2-C9A2B7F03F9E}</Project>
+      <Name>random_internal_pool_urbg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_internal_randen.vcxproj">
+      <Project>{D92E995D-C3FA-389D-AEE1-A021EE2FCFC7}</Project>
+      <Name>random_internal_randen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_internal_randen_hwaes.vcxproj">
+      <Project>{BD171E19-FD5F-358A-A971-3E5358F1ED13}</Project>
+      <Name>random_internal_randen_hwaes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_internal_randen_hwaes_impl.vcxproj">
+      <Project>{AD278B1F-385C-3F0A-A762-C3AC19D6B8EB}</Project>
+      <Name>random_internal_randen_hwaes_impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_internal_randen_slow.vcxproj">
+      <Project>{D9DD7323-15E7-3DC8-AFD4-9DB2E752BE6F}</Project>
+      <Name>random_internal_randen_slow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_internal_seed_material.vcxproj">
+      <Project>{CCCA2632-529D-3CA8-88CC-EAE56658F18F}</Project>
+      <Name>random_internal_seed_material</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_seed_gen_exception.vcxproj">
+      <Project>{6134B3B2-31CC-35F0-B49A-1C16417B12D7}</Project>
+      <Name>random_seed_gen_exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\random\random_seed_sequences.vcxproj">
+      <Project>{0A2B0DEF-CDD0-399F-AA83-6A7EFD652A76}</Project>
+      <Name>random_seed_sequences</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\raw_hash_set.vcxproj">
+      <Project>{19CD197F-815B-342E-96DA-F5B4BDC9DB36}</Project>
+      <Name>raw_hash_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\raw_logging_internal.vcxproj">
+      <Project>{64886535-8D76-3578-B90D-5F5251ED03E6}</Project>
+      <Name>raw_logging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\spinlock_wait.vcxproj">
+      <Project>{F3730883-DCBA-30C5-94C8-5A7C022AC848}</Project>
+      <Name>spinlock_wait</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\stacktrace.vcxproj">
+      <Project>{A594BE97-6921-3DDA-9E37-17D889C453CC}</Project>
+      <Name>stacktrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\status\status.vcxproj">
+      <Project>{D2637772-E372-3C31-AEF3-D74F2C8B2EF0}</Project>
+      <Name>status</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\status\statusor.vcxproj">
+      <Project>{CFB0BEBE-3201-3FEB-98DA-42A8BA37283F}</Project>
+      <Name>statusor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\str_format_internal.vcxproj">
+      <Project>{E0DCDE62-63A3-391D-8E7B-495F975B1820}</Project>
+      <Name>str_format_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\strerror.vcxproj">
+      <Project>{79E49229-CCD2-3711-A07C-84A65C594BCD}</Project>
+      <Name>strerror</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\string_view.vcxproj">
+      <Project>{44200506-65A7-331B-A90A-BC836D95AE64}</Project>
+      <Name>string_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\strings.vcxproj">
+      <Project>{F0DB516B-8A74-306B-84FA-F943F8EFF584}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\strings_internal.vcxproj">
+      <Project>{2DB6FECD-5088-3D43-B84B-C96628F6E2EA}</Project>
+      <Name>strings_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\symbolize.vcxproj">
+      <Project>{4CA8064D-C92F-3C9C-BD2B-72A95566A37B}</Project>
+      <Name>symbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\synchronization\synchronization.vcxproj">
+      <Project>{D7E4184F-83A0-3963-AB09-B54FFEC4A2E7}</Project>
+      <Name>synchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\throw_delegate.vcxproj">
+      <Project>{4EC9D1BC-B81C-31F7-8E3C-D707B6A58A96}</Project>
+      <Name>throw_delegate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\time\time.vcxproj">
+      <Project>{357088FD-D0D5-3FAA-A4FF-1D83A8430DCD}</Project>
+      <Name>time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\time\time_zone.vcxproj">
+      <Project>{31196423-3B13-3DAA-BB09-42D57785D23B}</Project>
+      <Name>time_zone</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\utf8_for_code_point.vcxproj">
+      <Project>{5EBBD623-4925-3100-83F3-54FF14A1C0FE}</Project>
+      <Name>utf8_for_code_point</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\utf8_range\utf8_range.vcxproj">
+      <Project>{B5F60A87-C650-311D-9D34-D52DD92024CB}</Project>
+      <Name>utf8_range</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\utf8_range\utf8_validity.vcxproj">
+      <Project>{604E1A0C-6DF3-3C32-9BAD-8B032E07598C}</Project>
+      <Name>utf8_validity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\log\vlog_config_internal.vcxproj">
+      <Project>{65EFC7B5-B912-359F-A775-1DFFB4E795DE}</Project>
+      <Name>vlog_config_internal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,5 @@
+C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\deps\form_urlencoded-6e34d0fcfcfd3fc6.d: C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\form_urlencoded-1.2.2\src\lib.rs
+
+C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\deps\libform_urlencoded-6e34d0fcfcfd3fc6.rmeta: C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\form_urlencoded-1.2.2\src\lib.rs
+
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\form_urlencoded-1.2.2\src\lib.rs:

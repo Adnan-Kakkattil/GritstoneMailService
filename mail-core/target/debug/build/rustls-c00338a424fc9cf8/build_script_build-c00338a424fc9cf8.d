@@ -1,0 +1,5 @@
+C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\rustls-c00338a424fc9cf8\build_script_build-c00338a424fc9cf8.d: C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-0.21.12\build.rs
+
+C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\rustls-c00338a424fc9cf8\build_script_build-c00338a424fc9cf8.exe: C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-0.21.12\build.rs
+
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\rustls-0.21.12\build.rs:

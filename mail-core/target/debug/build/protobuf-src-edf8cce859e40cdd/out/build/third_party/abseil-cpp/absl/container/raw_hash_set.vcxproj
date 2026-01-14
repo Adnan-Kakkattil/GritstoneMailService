@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19CD197F-815B-342E-96DA-F5B4BDC9DB36}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>raw_hash_set</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">raw_hash_set.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">absl_raw_hash_set</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">raw_hash_set.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">absl_raw_hash_set</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">raw_hash_set.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">absl_raw_hash_set</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">raw_hash_set.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">absl_raw_hash_set</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro -Brepro /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4005;4068;4180;4244;4267;4503;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4005;4068;4180;4244;4267;4503;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4005;4068;4180;4244;4267;4503;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4068;4180;4244;4267;4503;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -l0x409</AdditionalOptions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf;C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\src;C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\container\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/absl/container/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/third_party/abseil-cpp/absl/container/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/absl/container/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/third_party/abseil-cpp/absl/container/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/absl/container/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/third_party/abseil-cpp/absl/container/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/absl/container/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/third_party/abseil-cpp/absl/container/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\container\internal\raw_hash_set.cc" />
+    <ClInclude Include="C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\protobuf-src-2.1.1+27.1\protobuf\third_party\abseil-cpp\absl\container\internal\raw_hash_set.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\ZERO_CHECK.vcxproj">
+      <Project>{C5405A27-607F-3770-A1A7-0B21E26A514E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\types\bad_optional_access.vcxproj">
+      <Project>{21FC7002-ABFE-35BF-AD71-49090F627E05}</Project>
+      <Name>bad_optional_access</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\types\bad_variant_access.vcxproj">
+      <Project>{785214A2-6688-31D9-83DC-4FCB9B922AC6}</Project>
+      <Name>bad_variant_access</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\base.vcxproj">
+      <Project>{D788F21A-8287-3EEC-A11A-98C6557B3E56}</Project>
+      <Name>base</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\hash\city.vcxproj">
+      <Project>{DB1C745B-50C3-3640-A95A-227A2FF0A4A8}</Project>
+      <Name>city</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\time\civil_time.vcxproj">
+      <Project>{5E213260-FB89-3E84-9D9B-0C2B06E436A5}</Project>
+      <Name>civil_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\debugging_internal.vcxproj">
+      <Project>{D6E70081-9861-3F7B-8D06-1DDACE23FA08}</Project>
+      <Name>debugging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\decode_rust_punycode.vcxproj">
+      <Project>{583DAA55-71D3-366C-ACF6-13D876BF1DB8}</Project>
+      <Name>decode_rust_punycode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\demangle_internal.vcxproj">
+      <Project>{9DBD473E-2FFA-3900-8BA5-9BAF41412F22}</Project>
+      <Name>demangle_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\demangle_rust.vcxproj">
+      <Project>{9063BE23-42FE-3598-9A10-224156860A91}</Project>
+      <Name>demangle_rust</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\profiling\exponential_biased.vcxproj">
+      <Project>{29092D65-0AA0-39F4-8FD2-EC3B78F1A998}</Project>
+      <Name>exponential_biased</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\synchronization\graphcycles_internal.vcxproj">
+      <Project>{8DC18B49-CAB7-3AE6-BE74-60515AC35C2F}</Project>
+      <Name>graphcycles_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\hash\hash.vcxproj">
+      <Project>{958FE99F-ED92-3A0F-A559-4D8C5F62C5B5}</Project>
+      <Name>hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\container\hashtablez_sampler.vcxproj">
+      <Project>{547FD4FA-1EAB-3935-BEC1-DC5BFFD2C283}</Project>
+      <Name>hashtablez_sampler</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\numeric\int128.vcxproj">
+      <Project>{AA176C39-BE82-338B-A498-00D48A66D482}</Project>
+      <Name>int128</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\synchronization\kernel_timeout_internal.vcxproj">
+      <Project>{E71AD8D4-6EBD-33DE-B1E0-D15DDA871E93}</Project>
+      <Name>kernel_timeout_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\log_severity.vcxproj">
+      <Project>{A92D5DBB-9CEF-3361-B39F-00763588B51B}</Project>
+      <Name>log_severity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\hash\low_level_hash.vcxproj">
+      <Project>{4D89979E-FC33-34B2-BCF5-33FD4AB3773E}</Project>
+      <Name>low_level_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\malloc_internal.vcxproj">
+      <Project>{7B0405ED-94BA-3C94-BF75-46B0F3A8F121}</Project>
+      <Name>malloc_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\raw_logging_internal.vcxproj">
+      <Project>{64886535-8D76-3578-B90D-5F5251ED03E6}</Project>
+      <Name>raw_logging_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\spinlock_wait.vcxproj">
+      <Project>{F3730883-DCBA-30C5-94C8-5A7C022AC848}</Project>
+      <Name>spinlock_wait</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\stacktrace.vcxproj">
+      <Project>{A594BE97-6921-3DDA-9E37-17D889C453CC}</Project>
+      <Name>stacktrace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\string_view.vcxproj">
+      <Project>{44200506-65A7-331B-A90A-BC836D95AE64}</Project>
+      <Name>string_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\strings.vcxproj">
+      <Project>{F0DB516B-8A74-306B-84FA-F943F8EFF584}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\strings\strings_internal.vcxproj">
+      <Project>{2DB6FECD-5088-3D43-B84B-C96628F6E2EA}</Project>
+      <Name>strings_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\symbolize.vcxproj">
+      <Project>{4CA8064D-C92F-3C9C-BD2B-72A95566A37B}</Project>
+      <Name>symbolize</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\synchronization\synchronization.vcxproj">
+      <Project>{D7E4184F-83A0-3963-AB09-B54FFEC4A2E7}</Project>
+      <Name>synchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\base\throw_delegate.vcxproj">
+      <Project>{4EC9D1BC-B81C-31F7-8E3C-D707B6A58A96}</Project>
+      <Name>throw_delegate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\time\time.vcxproj">
+      <Project>{357088FD-D0D5-3FAA-A4FF-1D83A8430DCD}</Project>
+      <Name>time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\time\time_zone.vcxproj">
+      <Project>{31196423-3B13-3DAA-BB09-42D57785D23B}</Project>
+      <Name>time_zone</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\build\protobuf-src-edf8cce859e40cdd\out\build\third_party\abseil-cpp\absl\debugging\utf8_for_code_point.vcxproj">
+      <Project>{5EBBD623-4925-3100-83F3-54FF14A1C0FE}</Project>
+      <Name>utf8_for_code_point</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

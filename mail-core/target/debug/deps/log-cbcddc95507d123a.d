@@ -1,0 +1,13 @@
+C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\deps\log-cbcddc95507d123a.d: C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\lib.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\macros.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\serde.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\mod.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\error.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\key.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\source.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\value.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\__private_api.rs
+
+C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\deps\liblog-cbcddc95507d123a.rmeta: C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\lib.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\macros.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\serde.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\mod.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\error.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\key.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\source.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\value.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\__private_api.rs
+
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\lib.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\macros.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\serde.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\mod.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\error.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\key.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\source.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\kv\value.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\log-0.4.29\src\__private_api.rs:

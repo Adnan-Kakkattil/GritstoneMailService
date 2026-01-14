@@ -1,0 +1,10 @@
+^C:\USERS\ADNAN\DESKTOP\PROJECTS\GRITSTONEMAILSERVICE\MAIL-CORE\TARGET\DEBUG\BUILD\PROTOBUF-SRC-EDF8CCE859E40CDD\OUT\BUILD\CMAKEFILES\DD1CBD76B8FFE37A85A248134C4714EA\GENERATE.STAMP.RULE
+setlocal
+C:\Users\adnan\AppData\Local\Programs\Python\Python311\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf -BC:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/adnan/Desktop/Projects/GritstoneMailService/mail-core/target/debug/build/protobuf-src-edf8cce859e40cdd/out/build/protobuf.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

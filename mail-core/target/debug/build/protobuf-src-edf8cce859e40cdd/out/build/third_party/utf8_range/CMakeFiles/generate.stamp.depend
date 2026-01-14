@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/utf8_range/CMakeLists.txt
+C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/utf8_range/cmake/utf8_range-config.cmake.in
+C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/utf8_range/cmake/utf8_range.pc.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake

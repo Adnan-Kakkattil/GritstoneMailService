@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/CMake/AbseilDll.cmake
+C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/CMake/AbseilHelpers.cmake
+C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/CMake/abslConfig.cmake.in
+C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/CMakeLists.txt
+C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/absl/copts/AbseilConfigureCopts.cmake
+C:/Users/adnan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/protobuf-src-2.1.1+27.1/protobuf/third_party/abseil-cpp/absl/copts/GENERATED_AbseilCopts.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeDependentOption.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CMakePackageConfigHelpers.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CMakeParseArguments.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CTest.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CTestTargets.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CTestUseLaunchers.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CheckIncludeFile.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/CheckLibraryExists.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/DartConfiguration.tcl.in
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/FindPackageMessage.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/FindThreads.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/GNUInstallDirs.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/adnan/AppData/Local/Programs/Python/Python311/Lib/site-packages/cmake/data/share/cmake-4.1/Templates/CTestScript.cmake.in

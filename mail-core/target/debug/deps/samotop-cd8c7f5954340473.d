@@ -1,0 +1,10 @@
+C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\deps\samotop-cd8c7f5954340473.d: C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\lib.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\io\mod.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\mail\mod.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\mail\mapper.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\server\mod.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\smtp\mod.rs
+
+C:\Users\adnan\Desktop\Projects\GritstoneMailService\mail-core\target\debug\deps\libsamotop-cd8c7f5954340473.rmeta: C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\lib.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\io\mod.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\mail\mod.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\mail\mapper.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\server\mod.rs C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\smtp\mod.rs
+
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\lib.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\io\mod.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\mail\mod.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\mail\mapper.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\server\mod.rs:
+C:\Users\adnan\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\samotop-0.13.2\src\smtp\mod.rs:
