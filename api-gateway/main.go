@@ -1,9 +1,12 @@
 package main
 
 import (
+	"context"
 	"log"
+	"net"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -11,6 +14,7 @@ import (
 	"github.com/jmoiron/sqlx"
 	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
+	"github.com/wneessen/go-mail"
 )
 
 type Email struct {
@@ -57,11 +61,8 @@ func main() {
 	}
 
 	r := gin.Default()
-
-	// Serve Static Files
 	r.StaticFile("/", "./frontend/index.html")
 
-	// API Routes
 	r.GET("/health", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"status": "up"})
 	})
@@ -69,7 +70,6 @@ func main() {
 	r.POST("/login", login)
 	r.POST("/accounts", createAccount)
 
-	// Protected routes
 	authorized := r.Group("/")
 	authorized.Use(authMiddleware())
 	{
@@ -151,12 +151,10 @@ func createAccount(c *gin.Context) {
 		return
 	}
 
-	// Validate domain
 	primaryDomain := os.Getenv("PRIMARY_DOMAIN")
 	if primaryDomain != "" {
-		// Ensure the email ends with @nomadscipher.xyz
 		domainSuffix := "@" + primaryDomain
-		if len(req.EmailAddress) < len(domainSuffix) || req.EmailAddress[len(req.EmailAddress)-len(domainSuffix):] != domainSuffix {
+		if !strings.HasSuffix(req.EmailAddress, domainSuffix) {
 			c.JSON(http.StatusBadRequest, gin.H{"error": "Only accounts under @" + primaryDomain + " are allowed"})
 			return
 		}
@@ -175,9 +173,16 @@ func createAccount(c *gin.Context) {
 
 func getEmails(c *gin.Context) {
 	email, _ := c.Get("email")
+	folder := c.DefaultQuery("folder", "inbox")
 	emails := []Email{}
-	// Select specific columns to avoid errors if the table schema changes (like adding account_id)
-	err := db.Select(&emails, "SELECT id, sender, recipient, subject, body_plain, received_at FROM emails WHERE recipient = $1 ORDER BY received_at DESC", email)
+
+	var err error
+	if folder == "sent" {
+		err = db.Select(&emails, "SELECT id, sender, recipient, subject, body_plain, received_at FROM emails WHERE sender = $1 ORDER BY received_at DESC", email)
+	} else {
+		err = db.Select(&emails, "SELECT id, sender, recipient, subject, body_plain, received_at FROM emails WHERE recipient = $1 ORDER BY received_at DESC", email)
+	}
+
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
@@ -193,13 +198,55 @@ func sendMail(c *gin.Context) {
 		return
 	}
 
+	// 1. Save to internal DB (Sent Mail)
 	_, err := db.Exec("INSERT INTO emails (sender, recipient, subject, body_plain) VALUES ($1, $2, $3, $4)",
 		sender, req.To, req.Subject, req.Body)
-
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to save sent mail: " + err.Error()})
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"message": "Email sent"})
+	// 2. Resolve MX record for external delivery
+	domain := strings.Split(req.To, "@")[1]
+	mxs, err := net.LookupMX(domain)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not find mail server for " + domain})
+		return
+	}
+
+	// 3. Deliver to external SMTP server (Real World Delivery)
+	m := mail.NewMsg()
+	if err := m.From(sender.(string)); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+	if err := m.To(req.To); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+	m.Subject(req.Subject)
+	m.SetBodyString(mail.TypeTextPlain, req.Body)
+
+	// Try first MX server
+	mxHost := mxs[0].Host
+	client, err := mail.NewClient(mxHost, mail.WithPort(25), mail.WithTLSPolicy(mail.NoTLS)) // Real servers use opportunistic TLS usually
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to connect to " + mxHost})
+		return
+	}
+
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*30)
+	defer cancel()
+
+	if err := client.DialAndSendWithContext(ctx, m); err != nil {
+		// This might fail locally if port 25 is blocked
+		log.Printf("External delivery failed: %v", err)
+		c.JSON(http.StatusAccepted, gin.H{
+			"message": "Saved internally, but external delivery failed (local environment usually blocks port 25)",
+			"details": err.Error(),
+		})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"message": "Email delivered to " + req.To})
 }
