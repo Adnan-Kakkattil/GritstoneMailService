@@ -12,6 +12,38 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mailuser -d gritstonemail"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  mail-core:
+    build: ./mail-core
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://mailuser:mailpassword@db:5432/gritstonemail
+      PRIMARY_DOMAIN: nomadscipher.xyz
+      SMTP_PORT: 25
+    ports:
+      - "25:25"
+      - "2525:2525"
+
+  api-gateway:
+    build: ./api-gateway
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://mailuser:mailpassword@db:5432/gritstonemail
+      PRIMARY_DOMAIN: nomadscipher.xyz
+      PORT: 8080
+    ports:
+      - "8080:8080"
 
 volumes:
   postgres_data:

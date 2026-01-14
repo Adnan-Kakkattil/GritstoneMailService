@@ -101,12 +101,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     sqlx::migrate!("./migrations").run(&pool).await?;
     info!("Database initialized and migrations applied.");
 
-    let smtp_addr = "0.0.0.0:2525";
+    let smtp_port = std::env::var("SMTP_PORT").unwrap_or_else(|_| "2525".to_string());
+    let smtp_addr = format!("0.0.0.0:{}", smtp_port);
     info!("SMTP server starting on {}", smtp_addr);
 
     let handler = MailHandler::new(pool, tokio::runtime::Handle::current());
     let mut server = Server::new(handler);
-    server.with_name("gritstone-mail-core")
+    server.with_name("mail.nomadscipher.xyz")
           .with_addr(smtp_addr)
           .expect("Failed to bind to address");
 

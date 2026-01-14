@@ -151,6 +151,17 @@ func createAccount(c *gin.Context) {
 		return
 	}
 
+	// Validate domain
+	primaryDomain := os.Getenv("PRIMARY_DOMAIN")
+	if primaryDomain != "" {
+		// Ensure the email ends with @nomadscipher.xyz
+		domainSuffix := "@" + primaryDomain
+		if len(req.EmailAddress) < len(domainSuffix) || req.EmailAddress[len(req.EmailAddress)-len(domainSuffix):] != domainSuffix {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Only accounts under @" + primaryDomain + " are allowed"})
+			return
+		}
+	}
+
 	_, err := db.Exec("INSERT INTO accounts (email_address, password_hash) VALUES ($1, $2)", 
 		req.EmailAddress, req.Password)
 	
