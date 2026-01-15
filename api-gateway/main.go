@@ -1,9 +1,10 @@
 package main
 
 import (
-	"context"
+	"bytes"
+	"encoding/json"
+	"fmt"
 	"log"
-	"net"
 	"net/http"
 	"os"
 	"strings"
@@ -14,7 +15,6 @@ import (
 	"github.com/jmoiron/sqlx"
 	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
-	"github.com/wneessen/go-mail"
 )
 
 type Email struct {
@@ -38,6 +38,13 @@ type LoginRequest struct {
 }
 
 type SendRequest struct {
+	To      string `json:"to"`
+	Subject string `json:"subject"`
+	Body    string `json:"body"`
+}
+
+type InternalSendRequest struct {
+	Sender  string `json:"sender"`
 	To      string `json:"to"`
 	Subject string `json:"subject"`
 	Body    string `json:"body"`
@@ -206,47 +213,32 @@ func sendMail(c *gin.Context) {
 		return
 	}
 
-	// 2. Resolve MX record for external delivery
-	domain := strings.Split(req.To, "@")[1]
-	mxs, err := net.LookupMX(domain)
+	// 2. Delegate delivery to Rust Mail Core (the "heavy lifter")
+	rustCoreUrl := os.Getenv("RUST_CORE_URL")
+	if rustCoreUrl == "" {
+		rustCoreUrl = "http://mail-core:5000" // Internal Docker DNS
+	}
+
+	internalReq := InternalSendRequest{
+		Sender:  sender.(string),
+		To:      req.To,
+		Subject: req.Subject,
+		Body:    req.Body,
+	}
+
+	jsonData, _ := json.Marshal(internalReq)
+	resp, err := http.Post(rustCoreUrl+"/internal/send", "application/json", bytes.NewBuffer(jsonData))
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Could not find mail server for " + domain})
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to connect to Rust Mail Core: " + err.Error()})
+		return
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Rust Mail Core failed to deliver the message"})
 		return
 	}
 
-	// 3. Deliver to external SMTP server (Real World Delivery)
-	m := mail.NewMsg()
-	if err := m.From(sender.(string)); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-		return
-	}
-	if err := m.To(req.To); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-		return
-	}
-	m.Subject(req.Subject)
-	m.SetBodyString(mail.TypeTextPlain, req.Body)
-
-	// Try first MX server
-	mxHost := mxs[0].Host
-	client, err := mail.NewClient(mxHost, mail.WithPort(25), mail.WithTLSPolicy(mail.NoTLS)) // Real servers use opportunistic TLS usually
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to connect to " + mxHost})
-		return
-	}
-
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second*30)
-	defer cancel()
-
-	if err := client.DialAndSendWithContext(ctx, m); err != nil {
-		// This might fail locally if port 25 is blocked
-		log.Printf("External delivery failed: %v", err)
-		c.JSON(http.StatusAccepted, gin.H{
-			"message": "Saved internally, but external delivery failed (local environment usually blocks port 25)",
-			"details": err.Error(),
-		})
-		return
-	}
-
-	c.JSON(http.StatusOK, gin.H{"message": "Email delivered to " + req.To})
+	c.JSON(http.StatusOK, gin.H{"message": "Email sent and delivered via Rust Core"})
 }
+
